@@ -1,0 +1,42 @@
+package edu.institute;
+
+ 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+
+import edu.institute.entity.Answer;
+import edu.institute.entity.Question;
+import edu.institute.repository.AnswerRepo;
+import edu.institute.repository.QuestionRepo;
+
+@SpringBootApplication
+public class SbJpaOnetomanyApplication {
+
+	public static void main(String[] args) {
+		ApplicationContext ctx=SpringApplication.run(SbJpaOnetomanyApplication.class, args);
+		
+		QuestionRepo qrepo=ctx.getBean(QuestionRepo.class);
+		AnswerRepo arepo=ctx.getBean(AnswerRepo.class);
+		
+		
+		  Question ques =qrepo.findById(1).get();
+		  
+		  System.out.println(ques.getTitle());
+		  System.out.println(ques.getDescription());
+		  
+		  for(Answer ans:ques.getAnswers()) {
+			  System.out.println("====================");
+			  System.out.println(ans.getAnswer());
+		  }
+		  
+		  Answer ans =arepo.findById(12).get();
+		  System.out.println(ans.getQid().getTitle());
+		  System.out.println(ans.getAid());
+		  System.out.println(ans.getAnswer());
+	  
+	 
+		
+	}
+
+}

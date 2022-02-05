@@ -1,0 +1,5 @@
+package edu.institute.repo;
+
+public class StudentAddressRepository {
+
+}

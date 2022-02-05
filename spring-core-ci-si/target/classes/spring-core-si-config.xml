@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+     <bean id="prod" class="com.institute.Product">
+         <property name="id" value="121"></property>
+         <property name="name" value ="SmartPhone"></property>
+ 		 <property name="price" value = "23999.22"></property>
+ 		 <property name="comment">
+ 		     <list>
+ 		         <value>This is very good product</value>
+ 		         <value>This product is ude for basic use</value>
+ 		         <value>High price</value>
+ 		     </list>
+ 		 </property>
+ 		 
+ 		 <property name="model">
+ 		    <set>
+ 		       <value>SmartPhone 3GB-RAM</value>
+ 		       <value>SmartPhone 6GB-RAM</value>
+ 		       <value>SmartPhone 8GB-RAM</value>
+ 		       
+ 		    </set>
+ 		    
+ 		 </property>
+ 		 
+ 		 <property name ="ratings">
+ 		     <map>
+ 		         <entry key ="5.0" value="20"></entry>
+ 		           <entry key ="4.0" value="25"></entry>
+ 		           <entry key ="3.0" value="40"></entry>
+ 		         
+ 		     </map>
+ 		 </property>
+
+</bean>
+</beans>

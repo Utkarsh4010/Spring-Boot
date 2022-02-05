@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;eduinstitute.sbrepoapijson&apos; to &apos;eduinstitute&apos;&#x0D;&#x0A;- Original project: &apos;sb-repo-api-json&apos;&#x0D;&#x0A;- Original element: &apos;sb-repo-api-json/src/main/java/eduinstitute.sbrepoapijson&apos;&#x0D;&#x0A;- Renamed element: &apos;sb-repo-api-json/src/main/java/eduinstitute&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;eduinstitute.sbrepoapijson&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;eduinstitute.sbrepoapijson" name="eduinstitute" qualified="false" references="true" stamp="1643004247751" textual="false" version="1.0"/>
+</session>

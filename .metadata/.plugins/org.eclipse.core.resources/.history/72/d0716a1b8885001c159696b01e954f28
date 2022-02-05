@@ -1,0 +1,30 @@
+package edu.institute.entity;
+
+import java.util.Date;
+import java.util.List;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
+import org.hibernate.annotations.CreationTimestamp;
+
+@Entity
+public class Question {
+  @Id
+  @GeneratedValue(strategy=GenerationType.AUTO)
+  private int qid;
+  private String title;
+  private String description;
+  @CreationTimestamp
+  private Date postedts;
+  //mappedBy:is use to mapped with foreign key created inside another table. mostly use for bi-direction
+  //cascade: this property is use to perform the deletion or updation operations on the related tables
+  @OneToMany(mappedBy="qid", cascade=CascadeType.ALL,fetch=FetchType.EAGER)
+  private List<Answer>answers;
+  
+}

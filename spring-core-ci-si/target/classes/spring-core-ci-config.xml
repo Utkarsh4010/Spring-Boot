@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+     <bean id="emp" class="com.institute.Employee">
+          <constructor-arg value="1221"></constructor-arg>
+          <constructor-arg value="Abc"></constructor-arg>
+          <constructor-arg value="26225.22"></constructor-arg>
+          <constructor-arg>
+             <list>
+                 <value>8866332211</value>
+                 <value>9977445588</value>
+             </list>
+          </constructor-arg>
+          
+          <constructor-arg>
+             <map>
+                <entry key="254515" value="pune"></entry>
+                <entry key="416316" value="sangli"></entry>
+             </map>
+          </constructor-arg>
+          
+          <constructor-arg>
+              <set>
+                 <value>COre java</value>
+                 <value>Advance java</value>
+                 <value>Spring</value>
+              </set>
+          </constructor-arg>
+          
+          <constructor-arg>
+              <list>
+                <value>Abc pvt.ltd</value>
+                <value>Xyz pvt.ltd</value>
+              </list>
+          </constructor-arg>
+          
+     
+     </bean>    
+
+</beans>
