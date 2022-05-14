@@ -1,8 +1,0 @@
-package edu.institute.repo;
-
-import org.springframework.stereotype.Repository;
-
-@Repository
-public class StudentAddressRepository extends JpaRepsitory<StudentAddress, Integer>{
-
-}

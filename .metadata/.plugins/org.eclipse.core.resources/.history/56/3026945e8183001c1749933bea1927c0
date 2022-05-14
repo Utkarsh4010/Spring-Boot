@@ -1,8 +1,0 @@
-package edu.institute.controller;
-@RestController
-public class UserController {
-  @GetMapping("/user/welcome1")
-  public String welcomeController() {
-	  return "Welcome User";
-  }
-}

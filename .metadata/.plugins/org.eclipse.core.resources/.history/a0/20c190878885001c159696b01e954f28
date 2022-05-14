@@ -1,5 +1,0 @@
-package edu.institute.repository;
-
-public interface AnswerRepo {
-
-}

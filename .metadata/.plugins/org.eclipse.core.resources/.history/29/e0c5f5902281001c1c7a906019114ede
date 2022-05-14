@@ -1,5 +1,0 @@
-package edu.institute.repo;
-
-public interface CourseRepository {
-
-}
